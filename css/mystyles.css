@@ -1,0 +1,93 @@
+@charset "UTF-8";
+body {
+  padding: 50px 0px 0px 0px;
+  z-index: 0;
+  margin: 0;
+  background: whitesmoke; }
+
+.row, .container {
+  margin: 0px auto;
+  padding: 0;
+  width: 100%; }
+
+.navbar-inverse {
+  background: gray; }
+  .navbar-inverse .dropdown-menu {
+    padding: 0;
+    margin: 8px auto;
+    background: darkgray;
+    border-radius: 0; }
+    .navbar-inverse .dropdown-menu .dropdown-item {
+      color: black; }
+
+.jumbotron {
+  width: 100%;
+  margin: 0px auto;
+  border-radius: 0;
+  background: lightgray;
+  color: black; }
+
+#mycarousel .carousel-item.active,
+#mycarousel .carousel-item-next,
+#mycarousel .carousel-item-prev {
+  display: block; }
+
+#mycarousel img {
+  width: 100%; }
+
+.row-content {
+  margin: 0px auto;
+  padding: 10px 0px;
+  min-height: 250px; }
+
+.toys {
+  padding: 2rem; }
+
+footer {
+  margin: 0px auto;
+  padding: 20px 0px;
+  background: gray; }
+  footer li {
+    display: inline-block; }
+    footer li a {
+      text-decoration: none;
+      color: black;
+      padding-right: 8px; }
+      footer li a:hover {
+        text-decoration: none;
+        color: red; }
+
+.frm-hdr {
+  margin: 40px 0 0 50px; }
+
+.many-toys {
+  margin: 1.2rem 0 1rem 0;
+  /* 4 2 - для равных всех отступов*/ }
+
+@media screen and (max-width: 576px) {
+  .card-toy {
+    width: 16rem; }
+  .form-group {
+    padding: 10px 0; }
+  .frm-hdr {
+    margin: 30px 0 0 30px; } }
+
+@media screen and (min-width: 577px) {
+  .card-toy {
+    width: 27vw; }
+  .form-group {
+    padding: 10px 0; }
+  .frm-hdr {
+    margin: 30px 0 0 30px; } }
+
+@media screen and (min-width: 768px) {
+  .card-toy {
+    width: 14rem; } }
+
+@media screen and (min-width: 990px) {
+  .card-toy {
+    width: 18rem; } }
+
+@media screen and (min-width: 1200px) {
+  .card-toy {
+    width: 30.3vw; } }
