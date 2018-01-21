@@ -61,38 +61,32 @@
     </div>
     <div class="row row-content">
         <div class="col-12 col-md-8">
-            <form>
+            <form id="contact-form" method="post" action="contact.php" role="form">
+                <div class="messages"></div>
                 <div class="form-group row">
-                    <label for="firstname" class="col-sm-3 col-lg-2 col-form-label">Имя</label>
+                    <label for="form_name" class="col-sm-3 col-lg-2 col-form-label">Имя</label>
                     <div class="col-sm-9 col-lg-5">
-                        <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Введите ваше имя">
+                        <input id="form_name" type="text" name="name" class="form-control" placeholder="Введите Имя" required="required" data-error="Поле не заполнено">
+                        <div class="help-block with-errors"></div>
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label for="emailid" class="col-sm-3 col-lg-2 col-form-label">Email</label>
+                    <label for="form_email" class="col-sm-3 col-lg-2 col-form-label">Email</label>
                     <div class="col-sm-9 col-lg-5">
-                        <input type="email" class="form-control" id="emailid" name="emailid" placeholder="Введите ваш Email">
+                        <input id="form_email" type="email" name="email" class="form-control" placeholder="Введите email" required="required" data-error="Неверно введен Email">
+                        <div class="help-block with-errors"></div>
                     </div>
-                </div> <!--
+                </div>
                 <div class="form-group row">
-                    <label class="col-sm-3 col-lg-2 col-form-label" for="exampleSelect1">Тип обращения</label>
-                    <div class="col-sm-9 col-lg-5">
-                        <select class="form-control" id="exampleSelect1">
-                            <option>Предложение</option>
-                            <option>Реклама</option>
-                            <option>Жалоба</option>
-                        </select>
-                    </div>
-                </div> -->
-                <div class="form-group row">
-                    <label for="feedback" class="col-sm-3 col-lg-2 col-form-label">Сообщение</label>
+                    <label for="form_message" class="col-sm-3 col-lg-2 col-form-label">Сообщение</label>
                     <div class="col-sm-9 col-lg-8">
-                        <textarea class="form-control" id="feedback" name="feedback" rows="12"></textarea>
+                        <textarea id="form_message" name="message" class="form-control" placeholder="Оставьте ваше сообщение" rows="12" required="required" data-error="Поле не заполнено"></textarea>
+                        <div class="help-block with-errors"></div>
                     </div>
                 </div>
                 <div class="form-group row">
                     <div class="offset-sm-3 col-sm-9 col-lg-2 offset-lg-2">
-                        <button type="submit" class="btn btn-primary">
+                        <button type="submit" class="btn btn-primary btn-send" value="Send message">
                             Отправить
                         </button>
                     </div>
@@ -136,7 +130,8 @@
 <script src="node_modules/tether/dist/js/tether.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="js/scripts.js"></script>
+<script src="validator.js"></script>
+<script src="contact.js"></script>
 <!-- endbuild -->
 </body>
-
 </html>

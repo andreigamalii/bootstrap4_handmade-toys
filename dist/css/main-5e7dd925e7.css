@@ -146,6 +146,8 @@ body {
 
 .toys {
   padding: 2rem; }
+  .toys h2 {
+    text-transform: capitalize; }
 
 footer {
   margin: 0px auto;
